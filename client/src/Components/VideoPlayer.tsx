@@ -102,7 +102,7 @@ const Progress = styled.progress`
     }
 `;
 
-export default function VideoPlayer(props: any) {
+export default function VideoPlayer({ src }: { src: string }) {
     const video = useRef<HTMLVideoElement>(null);
     const videoPlayer = useRef<HTMLDivElement>(null);
     const progressBar = useRef<HTMLProgressElement>(null);
@@ -223,7 +223,7 @@ export default function VideoPlayer(props: any) {
             <Player id="video" ref={videoPlayer}>
                 <Video
                     ref={video}
-                    src="http://localhost:3001/api/public/video?watch=tuto.mp4"
+                    src={src}
                     visible={!isControlsHidden}
                     onClick={handlePlay}
                 ></Video>

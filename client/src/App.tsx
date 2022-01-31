@@ -12,7 +12,7 @@ function App() {
     return (
         <div className="App">
             <Temp>
-                <VideoPlayer />
+                <VideoPlayer src="http://localhost:3001/api/public/video?watch=tuto.mp4" />
             </Temp>
         </div>
     );
