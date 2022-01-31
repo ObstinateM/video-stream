@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Readex Pro', sans-serif;
+}
+
+video {
+    width: 100%;
+    height: auto;
+    background-color: white;
+}
+
+.player {
+    position: relative;
+    width: 80%;
+    height: auto;
+}
+
+.player > * {
+    color: white;
+}
+
+.player-controls-shadow,
+.player-controls-shadow > * {
+    visibility: hidden;
+}
+
+.player-controls-shadow {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 120px;
+    width: 100%;
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 0.3) 45.31%,
+        rgba(0, 0, 0, 0.7) 100%
+    );
+}
+
+.player-button {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-left: 25px;
+    margin-bottom: 25px;
+    width: calc(100% - 50px);
+    display: flex;
+    height: 30px;
+}
+
+.player-button button {
+    background: transparent;
+    border: none !important;
+    outline: none !important;
+    cursor: pointer;
+    height: 100%;
+}
+
+.player-button button img {
+    height: 100%;
+    width: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.player-title {
+    margin: 0;
+}
+
+.player-center {
+    justify-self: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.show,
+.show > * {
+    visibility: visible;
+}
+
+.hide-cursor {
+    cursor: none;
+}

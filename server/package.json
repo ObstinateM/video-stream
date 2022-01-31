@@ -1,0 +1,20 @@
+{
+    "name": "server",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "type": "module",
+    "dependencies": {
+        "express": "^4.17.2",
+        "express-jwt": "^6.1.0"
+    },
+    "devDependencies": {
+        "@types/express": "^4.17.13"
+    }
+}

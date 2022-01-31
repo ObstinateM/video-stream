@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="index.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Readex+Pro&display=swap"
+            rel="stylesheet"
+        />
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="player" id="video">
+            <video
+                src="http://localhost:3001/api/private/video?watch=tuto.mp4&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.XbPfbIHMI6arZ3Y922BhjWgQzWXcXNrz0ogtVhfEd2o"
+            ></video>
+            <div class="player-controls-shadow" id="controls">
+                <div class="player-button">
+                    <div class="player-left">
+                        <button>
+                            <img
+                                src="./client/public/images/play-button-arrowhead 1.svg"
+                                alt="play"
+                            />
+                        </button>
+                        <button>
+                            <img src="./client/public/images/less_ten.svg" alt="-10" />
+                        </button>
+                        <button>
+                            <img src="./client/public/images/plus_ten.svg" alt="+10" />
+                        </button>
+                        <button>
+                            <img src="./client/public/images/sound.svg" alt="volume" />
+                        </button>
+                    </div>
+                    <div class="player-center">
+                        <h3 class="player-title">Channel - Lorem Ipsum Disert</h3>
+                    </div>
+                    <div class="player-right">
+                        <button>
+                            <img src="./client/public/images/races.svg" alt="speed" />
+                        </button>
+                        <button>
+                            <img src="./client/public/images/fullscreen.svg" alt="fullscreen" />
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="./script.js"></script>
+    </body>
+</html>
